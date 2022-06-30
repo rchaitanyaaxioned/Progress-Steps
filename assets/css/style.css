@@ -83,8 +83,12 @@ sub { bottom: -.25em; }
 
 /*for all*/
 body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
   box-sizing: border-box;
   font-family: sans-serif;
+  justify-content: center;    
 }
 
 a { 
@@ -106,12 +110,6 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-
-
-
-
-
-
 /*=================================
   Header styling ends here
 =================================*/  
@@ -119,7 +117,9 @@ li {
 /*=================================
   main styling starts here
 =================================*/
-
+.container {
+  text-align: center;
+}
 
 
 
