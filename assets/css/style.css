@@ -124,20 +124,29 @@ li {
   text-align: center;
 }
 
-.progress-bar {
-  padding: 5px 35%;
+main .wrapper {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
 
-.progress-bar::before {
-  width: 25%;
+.progress-bar-grey {
+  width: 30%;
   height: 4px;
-  position: absolute;
-  top: 15%;
+  position: relative;
   z-index: -1;
   background-color: #E0E0E0;
   content: '';
+}
+
+.progress-bar-blue {
+  width: 100%;
+  display: flex;
+  top: -10px;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .steps {
@@ -154,7 +163,8 @@ li {
 }
 
 .control-btns {
-  padding: 25px 41%;
+  width: 18%;
+  margin: 50px 0;
   display: flex;
   justify-content: space-between;
 }
