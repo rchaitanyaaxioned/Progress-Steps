@@ -1,4 +1,4 @@
-const progress_bar = document.querySelector('.progress-bar');
+const progress_bar = document.querySelector('.progress-bar-blue');
 const prev_btn = document.querySelector('.prev-btn');
 const next_btn = document.querySelector('.next-btn');
 const steps = document.querySelectorAll('.steps');
@@ -31,7 +31,7 @@ function update() {
     }
   });
   const actives = document.querySelectorAll('.active');
-  // progress_bar.style.width = (actives.length - 1) / (steps.length - 1) * 100 + '%';
+  progress_bar.style.width = (actives.length - 1) / (steps.length - 1) * 100 + '%';
 
   if (currentActive === 1) {
     prev_btn.disabled = true;
