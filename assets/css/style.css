@@ -141,6 +141,18 @@ main .wrapper {
 }
 
 .progress-bar-blue {
+  width: 0;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: #2A92DF;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.progress-step-list {
   width: 100%;
   display: flex;
   top: -10px;
