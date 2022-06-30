@@ -83,12 +83,12 @@ sub { bottom: -.25em; }
 
 /*for all*/
 body {
-  height: 100vh;
+  /* height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: center; */
   box-sizing: border-box;
   font-family: sans-serif;
-  justify-content: center;    
+  /* justify-content: center;     */
 }
 
 a { 
@@ -118,15 +118,67 @@ li {
   main styling starts here
 =================================*/
 .container {
+  margin: 95px 0;
+  position: relative;
+  top: 190px;
   text-align: center;
 }
 
+.progress-bar {
+  padding: 5px 35%;
+  display: flex;
+  justify-content: space-between;
+}
 
+.progress-bar::before {
+  width: 25%;
+  height: 4px;
+  position: absolute;
+  top: 15%;
+  z-index: -1;
+  background-color: #E0E0E0;
+  content: '';
+}
 
+.steps {
+  padding: 2px 2%;
+  background-color: #FFF;
+  border: 3px solid #E0E0E0;
+  border-radius: 50%;
+  color: #BA9E9C;
+  font-size: 16px;
+}
 
+.active {
+  border: 3px solid #3498DB;
+}
 
+.control-btns {
+  padding: 25px 41%;
+  display: flex;
+  justify-content: space-between;
+}
 
+.btn {
+  padding: 7px 15%;
+  background-color: #3498DB;
+  border: 1px solid #3498DB;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 15px;
+  text-transform: capitalize;
+}
 
+.btn:active {
+  background-color: #3498DB;
+  transform: scale(0.98,0.98);
+}
+
+.btn:disabled {
+  background-color: #E0E0E0;
+  border: 1px solid #E0E0E0;
+  cursor: not-allowed;
+}
 /*=================================
   main styling ends here
 =================================*/
